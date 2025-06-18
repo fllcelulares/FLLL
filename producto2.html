@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Producto 1 - TiendaRopa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('photo-1569241095162-e3b9a583b9d3.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0);
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .image {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 1.5em;
+      color: #ffd700;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .description {
+      margin-bottom: 20px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    select {
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+    }
+
+    .buy-button {
+      display: block;
+      text-align: center;
+      background-color: #25d36547;
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 1.1em;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6em;
+      }
+
+      .price {
+        font-size: 1.3em;
+      }
+
+      .buy-button {
+        font-size: 1em;
+        padding: 12px;
+      }
+    }
+  </style>
+  <script>
+    function enviarWhatsApp() {
+      const talla = document.getElementById('talla').value;
+      const mensaje = `Hola, quiero comprar el Producto 1 en talla ${talla}`;
+      const telefono = '595975768705';
+      const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</head>
+<body>
+  <div class="overlay">
+    <img src="Samsung galaxia A05s.png" alt="Producto 1" class="image" />
+    <h1>Producto 1</h1>
+    <p class="price">Gs. 150.000</p>
+    <p class="description">Descripción breve del Producto 1. Material, uso, detalles.</p>
+
+    <label for="talla">Seleccionar Memoria:</label>
+    <select id="talla">
+      <option value="S">120</option>
+      <option value="M" selected>32</option>
+      <option value="L">84</option>
+      <option value="XL">12</option>
+    </select>
+
+    <a href="#" class="buy-button" onclick="enviarWhatsApp()">Comprar por ahora</a>
+  </div>
+</body>
+</html>
