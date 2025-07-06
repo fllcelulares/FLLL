@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLL.COM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="encabezado">
+    <div class="carrusel-encabezado">
+      <img src="cabecera de perfume dos.png" class="active" alt="fondo 1">
+      <img src="fll logo.png" alt="fondo 2">
+      <img src="perfume de tres cabecera.png" alt="fondo 3">
+    </div>
+  </header>
+
+  <script src="carrusel.js"></script>
+
+</body>
+</html>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: url('photo-1569241095162-e3b9a583b9d3.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.636);
+      min-height: 100vh;
+      padding: 10px;
+    }
+
+    header {
+      border-bottom: 1px solid #888888a5;
+      padding: 20px 10px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.107);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 15px;
+      background-color: rgba(0, 0, 0, 0.695);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.95em;
+    }
+
+    nav .icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav .icons a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px 10px;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .product {
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid #cccccc00;
+      border-radius: 10px;
+      padding: 15px;
+      transition: box-shadow 0.3s;
+    }
+
+    .product:hover {
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0);
+    }
+
+    .product a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+    }
+
+    .product img {
+      width: 130%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      font-size: 0.95em;
+      color: #ddd;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 0.85em;
+      color: #aaa;
+      border-top: 1px solid #444;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+
+    <header>
+      <h1>Cosmeticos</h1>
+    </header>
+    </section>
+  </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Scroll</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+    }
+
+    .nuevos-productos {
+      margin-top: 40px;
+      padding: 20px 10px;
+    }
+
+    .nuevos-productos h2 {
+      text-align: center;
+      color: white;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .nuevos-carousel {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 15px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 10px;
+    }
+
+    .nuevos-carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nuevo-producto {
+      flex: 0 0 auto;
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 10px;
+      scroll-snap-align: start;
+      color: white;
+      text-align: center;
+    }
+
+    .nuevo-producto img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .boton-whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 8px 16px;
+      margin-top: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95em;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-whatsapp:hover {
+      background-color: #1ebd5a;
+    }
+  </style>
+</head>
+<body>
+     
+    </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLL.COM</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('photo-1569241095162-e3b9a583b9d3.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+  gap: 10px;
+  padding: 5px;
+}
+
+.producto {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+    .boton-whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 8px 16px;
+      margin-top: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <section class="productos-clasicos">
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="perfume bandera.png" alt="Producto 1">
+        <h3>Antonio Banderas</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="perfume arabe yataf.png" alt="Producto 2">
+        <h3>perfume arabe yataf</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="yajara asaf.png" alt="Producto 3">
+        <h3>yajara asaf</h3>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="club de nuit perfume - copia.png" alt="Producto 4">
+        <h3>club de nuit perfume</h3>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="perfume asad arabe - copia.png" alt="Producto 5">
+        <h3>perfume asad arabe</h3>
+      <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="crema paara dama.png" alt="Producto 6">
+        <h3>crema para dama</h3>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="arabia perfume - copia.png" alt="Producto 7">
+        <h3>Arabia perfume</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="perfume arabe man urbit.png" alt="Producto 8">
+        <h3>perfume arabe man urban</h3>
+      <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="perfume arabe caballero.png" alt="Producto 1">
+        <h3>perfume arabe caballero</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="perfume shakira.png" alt="Producto 1">
+        <h3>perfume shakira</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="perfume shakira..png" alt="Producto 1">
+        <h3>perfume shakira</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="perfume blue.png" alt="Producto 1">
+        <h3>perfume blue</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      </div>
+      </div>
+          <div class="producto">
+        <img src="victoria secre.png" alt="Producto 1">
+        <h3>Victoria secre</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+    </div>
+
+ <div class="barra-inferior">
+  <a href="index.html">
+    <span>🛒</span>
+    <p>Inicio</p>
+  </a>
+  <a href="bijouterie.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="ver-mas-celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+</div>
+
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="bijouterie.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="ver-mas-celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+</div>
+
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="bijouterie.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="ver-mas-celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+</div>
+
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="bijouterie.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="ver-mas-celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+</div>
+
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="bijouterie.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="ver-mas-celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+</div><div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="bijouterie.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="ver-mas-celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+</div>
