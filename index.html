@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLL.COM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="encabezado">
+    <div class="carrusel-encabezado">
+      <img src="cabezera iphone 16.png" class="active" alt="fondo 1">
+      <img src="fll logo.png" alt="fondo 2">
+      <img src="iphone 16.webp.png" alt="fondo 3">
+    </div>
+  </header>
+
+  <script src="carrusel.js"></script>
+
+</body>
+</html>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: url('photo-1569241095162-e3b9a583b9d3.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.636);
+      min-height: 100vh;
+      padding: 10px;
+    }
+
+    header {
+      border-bottom: 1px solid #888888a5;
+      padding: 20px 10px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.107);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 15px;
+      background-color: rgba(0, 0, 0, 0.695);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.95em;
+    }
+
+    nav .icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav .icons a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px 10px;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .product {
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid #cccccc00;
+      border-radius: 10px;
+      padding: 15px;
+      transition: box-shadow 0.3s;
+    }
+
+    .product:hover {
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0);
+    }
+
+    .product a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+    }
+
+    .product img {
+      width: 130%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      font-size: 0.95em;
+      color: #ddd;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 0.85em;
+      color: #aaa;
+      border-top: 1px solid #444;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+
+    <header>
+      <h1> Productos Top</h1>
+    </header>
+
+    <section class="grid">
+      <div class="product">
+        <a href="producto1.html">
+          <img src="oppo c4.png" alt="Producto 1" />
+          <h3>OPPO A40</h3>
+          <p>Disponible en varios colores.</p>
+        </a>
+      </div>
+      <div class="product">
+        <a href="producto2.html">
+          <img src="Samsung galaxia A05s.png" alt="Producto 2" />
+          <h3>Samsung Galaxi A05</h3>
+          <p>Disponible en varios colores.</p>
+          
+        </a>
+      </div>
+      <div class="product">
+        <a href="producto3.html">
+          <img src="iphone 16 normal.png" alt="Producto 3" />
+          <h3>iPhone 16</h3>
+          <p>Disponible en varios colores</p>
+        </a>
+      </div>
+      <div class="product">
+        <a href="producto4.html">
+          <img src="iphone negro.png" alt="Producto 4" />
+          <h3>iPhone 11</h3>
+          <p>Disponible en varios colores.</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Scroll</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+    }
+
+    .nuevos-productos {
+      margin-top: 40px;
+      padding: 20px 10px;
+    }
+
+    .nuevos-productos h2 {
+      text-align: center;
+      color: white;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .nuevos-carousel {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 15px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 10px;
+    }
+
+    .nuevos-carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nuevo-producto {
+      flex: 0 0 auto;
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 10px;
+      scroll-snap-align: start;
+      color: white;
+      text-align: center;
+    }
+
+    .nuevo-producto img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .boton-whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 8px 16px;
+      margin-top: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95em;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-whatsapp:hover {
+      background-color: #1ebd5a;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="nuevos-productos">
+    <h2>SONIDOS</h2>
+    
+    <div class="nuevos-carousel">
+      <div class="nuevo-producto 1">
+        <img src="jbl.png" alt="Producto 1">
+        <h3>JBL Go 2</h3>
+        <p>Sonido envolvente.</p>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="nuevo-producto 2">
+        <img src="mini speaker.png" alt="Producto 2">
+        <h3>Mini Speaker</h3>
+        <p>Sonido extremo.</p>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="nuevo-producto 3">
+        <img src="parlante eco power.png" alt="Producto 3">
+        <h3>Speaker</h3>
+        <p>Ecopower.</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="nuevo-producto 4">
+        <img src="casco gaming para videojuego.png" alt="Producto 4">
+        <h3>Casco gamer</h3>
+        <p>Ecopower</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+        <div class="nuevo-producto 4">
+        <img src="jbl flip.png" alt="Producto 4">
+        <h3>jbl flip 6</h3>
+
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      
+     
+    </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLL.COM</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('photo-1569241095162-e3b9a583b9d3.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+  gap: 10px;
+  padding: 5px;
+}
+
+.producto {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+    .boton-whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 8px 16px;
+      margin-top: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <section class="productos-clasicos">
+    <h2>AURICULARES Y MAS</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="casco gaming para videojuego.png" alt="Producto 1">
+        <h3>Casco gamer</h3>
+        <p>Sonido mas microfono</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="casco gaming.png" alt="Producto 2">
+        <h3>Casco gamer</h3>
+        <p>Disponible en varios colores</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="airpods pro.png" alt="Producto 3">
+        <h3>Airpods</h3>
+        <p>Sonido extremo</p>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="airpods.png" alt="Producto 4">
+        <h3>Auriculares a cable</h3>
+        <p>Disponible</p>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="auriculares con cable.png" alt="Producto 5">
+        <h3>Auricular</h3>
+        <p>Disponible</p>
+      <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="umi auricular.png" alt="Producto 6">
+        <h3>Auricular inalambrico</h3>
+        <p>Disponible</p>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="auricular con cancelacion de ruido.png" alt="Producto 7">
+        <h3>Auricular</h3>
+        <p>Con cancelacion de ruido</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="auricular con cable blanco.png" alt="Producto 8">
+        <h3>Auricular</h3>
+        <p>Auricular con cable</p>
+      <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="tablet dos.png" alt="Producto 1">
+        <h3>tablet</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="tablet dos.png" alt="Producto 1">
+        <h3>tablet</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="mau pach .jpg" alt="Producto 1">
+        <h3>Alfombra para mause</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="consola portatil.png" alt="Producto 1">
+        <h3>Consola Portatil</h3>
+        <p>Diferente juegos</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="pincel unuversal.png" alt="Producto 1">
+        <h3>pincel unuversal</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="cargador smart watch.png" alt="Producto 1">
+        <h3>Cargador smart</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="Mando de ps5.png" alt="Producto 1">
+        <h3>Mando ps5</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+       <div class="producto">
+        <img src="mini teclado.png" alt="Producto 1">
+        <h3>mini teclado</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="expancion wifi.png" alt="Producto 1">
+        <h3>expancion wifi</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+        <div class="producto">
+        <img src="microfono inalambrico.png" alt="Producto 1">
+        <h3>microfono inalambrico</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+        <div class="producto">
+        <img src="samrt wacth.png" alt="Producto 1">
+        <h3>samrt wacth</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+        <div class="producto">
+        <img src="tv android.png" alt="Producto 1">
+        <h3>Tv android</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+         <div class="producto">
+        <img src="cargador portatil.png" alt="Producto 1">
+        <h3>Cargador portatil</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+          <div class="producto">
+        <img src="tripode.png" alt="Producto 1">
+        <h3>tripode</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      </div>
+          <div class="producto">
+        <img src="lenovo laptop.jpg.png" alt="Producto 1">
+        <h3>lenovo laptop</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+         <div class="producto">
+        <img src="hp laptop.jpg.png" alt="Producto 1">
+        <h3>Hp laptop</h3>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+    </div>
+<!-- Sección GAMING -->
+<section class="productos-gaming">
+  <h2 style="text-align:center; padding: 20px 0 10px; font-size: 28px;">GAMING</h2>
+  <div style="display: flex; overflow-x: auto; gap: 20px; scroll-snap-type: x mandatory; padding: 10px; scroll-padding: 10px;">
+    <div style="flex: 0 0 250px; scroll-snap-align: start; background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; text-align: center; min-height: 330px;">
+      <img src="ChatGPT Image 3 jun 2025, 14_02_05.png" alt="Teclado Gamer" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+      <h3>Gatillo para celulares</h3>
+      <p>Para mejor aim</p>
+     <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+    <div style="flex: 0 0 250px; scroll-snap-align: start; background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; text-align: center; min-height: 330px;">
+      <img src="ps4 mando.png" alt="Mouse Gamer" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+      <h3>Mando Playtation 4</h3>
+      <p>PS4 mando inalambrico</p>
+      <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+     <div style="flex: 0 0 250px; scroll-snap-align: start; background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; text-align: center; min-height: 330px;">
+      <img src="maose.png" alt="Mouse Gamer" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+      <h3>Mouse Gamer</h3>
+      <p>Alta precisión</p>
+     <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div style="flex: 0 0 250px; scroll-snap-align: start; background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; text-align: center; min-height: 330px;">
+      <img src="residen evil village.png" alt="Mouse Gamer" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+      <h3>Reseint evil ps4</h3>
+     <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+     <div style="flex: 0 0 250px; scroll-snap-align: start; background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; text-align: center; min-height: 330px;">
+      <img src="antideslizante.png" alt="Mouse Gamer" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+      <h3>Protector para dedos</h3>
+      <p>Absorve el sudor</p>
+     <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+     <div style="flex: 0 0 250px; scroll-snap-align: start; background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; text-align: center; min-height: 330px;">
+      <img src="teclado.png" alt="Mouse Gamer" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+      <h3>Teclado ecopower</h3>
+      <p>Alta precisión</p>
+    <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+    <div style="flex: 0 0 250px; scroll-snap-align: start; background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; text-align: center; min-height: 330px;">
+      <img src="gatillo para celulares.png" alt="Auriculares" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+      <h3>Gatillo para celulares</h3>
+      <p>Disponible para todos los modelos</p>
+      <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+  </div>
+  
+   <section class="productos-smartwatch">
+  <h2>SMARTWATCH RELOJES</h2>
+  <div class="grid-productos">
+    <!-- tarjetas cuadradas -->
+      <div class="producto">
+        <img src="reloj inteligente color negro.png" alt="Producto 1">
+        <h3>Reloj</h3>
+        <p>Disponible</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="xiaomi pulsera.png" alt="Producto 2">
+        <h3>Pulsera smartwatch</h3>
+        <p>Controla ritmo cardiaco</p>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="ultra max reloj tipo apple wacht.png" alt="Producto 3">
+        <h3>smartwatch</h3>
+        <p>Ultra max</p>
+        <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="reloj militar.png" alt="Producto 4">
+        <h3>Reloj G</h3>
+        <p>Estilo militar</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="reloj casio.png" alt="Producto 5">
+        <h3>Reloj casio</h3>
+        <p>Comodidad garantizada</p>
+       <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+      <div class="producto">
+        <img src="reloj aqua.png" alt="Producto 6">
+        <h3>Reloj aqua</h3>
+        <p>Extremo</p>
+      <a href="https://wa.me/5950975768705?text=Hola,%20quiero%20comprar%20el%20Producto%201" class="boton-whatsapp" target="_blank">Comprar ahora</a>
+      </div>
+
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="billuteri.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="ver-mas-celulares.html">
+    <span>📱</span>
+    <p>Celulares ...</p>
+  </a>
+</div>
+
+
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="billuteri.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="ver mas productos.html">
+    <span>📱</span>
+    <p>celulares Celular</p>
+  </a>
+
+  <a href="redes.html">
+    <span></span>
+    <p>Redes</p>
+  </a>
+  <div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="billuteri.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+  <a href="redes.html">
+    <span></span>
+    <p>Redes</p>
+  </a>
+</div>
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="billuteri.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+  <a href="redes.html">
+    <span></span>
+    <p>Redes</p>
+  </a>
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  <a href="billuteri.html">
+    <span>💍</span>
+    <p>Cosmeticos</p>
+  </a>
+  <a href="celulares.html">
+    <span>📱</span>
+    <p>Celulares</p>
+  </a>
+  <a href="redes.html">
+    <span>📡</span>
+    <p>Redes</p>
+  </a>
+<div class="barra-inferior">
+  <a href="prendas.html">
+    <span>👕</span>
+    <p>Prendas</p>
+  </a>
+  </a>
+</div>
+</body>
+</html>
+
