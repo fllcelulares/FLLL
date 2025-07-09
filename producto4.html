@@ -104,8 +104,8 @@
   <script>
     function enviarWhatsApp() {
       const talla = document.getElementById('talla').value;
-      const mensaje = `Hola, quiero comprar el Producto 1 en talla ${talla}`;
-      const telefono = '5950975768705';
+      const mensaje = `Hola, quiero comprar el iPhone de memoria ${talla}`;
+      const telefono = '5950983086823';
       const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
       window.open(url, '_blank');
     }
@@ -120,10 +120,10 @@
 
     <label for="talla">Seleccionar Memoria:</label>
     <select id="talla">
-      <option value="S">12</option>
-      <option value="M" selected>32</option>
-      <option value="L">156</option>
-      <option value="XL">162</option>
+      <option value="12">12</option>
+      <option value="32" selected>32</option>
+      <option value="156">156</option>
+      <option value="162">162</option>
     </select>
 
     <a href="#" class="buy-button" onclick="enviarWhatsApp()">Comprar por ahora</a>
