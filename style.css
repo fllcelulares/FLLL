@@ -411,3 +411,9 @@ footer a {
 .barra-inferior a p {
   margin: 0;
 }
+.precio {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6ad94e; /* amarillo dorado */
+  margin: 5px 0;
+}
