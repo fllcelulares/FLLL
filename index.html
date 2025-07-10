@@ -359,11 +359,11 @@
       margin: 0;
     }
 
-.grid-productos {
+..grid-productos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
   gap: 10px;
-  padding: 5px;
+  padding: 0 5px; /* Reducido el padding lateral */
 }
 
 .producto {
@@ -371,6 +371,8 @@
   padding: 15px;
   border-radius: 10px;
   text-align: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .producto img {
@@ -379,6 +381,7 @@
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
 
     .boton-whatsapp {
       display: inline-block;
