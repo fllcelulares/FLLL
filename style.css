@@ -449,4 +449,22 @@ footer a {
 .barra-redes-derecha a img:hover {
   transform: scale(1.1);
 }
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 10px;
+  padding: 0 5px; /* Menor espacio lateral */
+}
 
+.tarjeta-producto {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
