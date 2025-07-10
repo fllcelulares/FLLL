@@ -426,9 +426,19 @@ footer a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* sombra sutil */
   transition: all 0.3s ease-in-out; /* transición suave */
 }
+.barra-redes-derecha {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
 .barra-redes-derecha a img {
   width: 30px;
-  height: 40px;
+  height: 30px;
   border-radius: 50%;
   background-color: white;
   padding: 3px;
@@ -439,3 +449,4 @@ footer a {
 .barra-redes-derecha a img:hover {
   transform: scale(1.1);
 }
+
