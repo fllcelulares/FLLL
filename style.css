@@ -417,3 +417,12 @@ footer a {
   color: #6ad94e; /* amarillo dorado */
   margin: 5px 0;
 }
+.encabezado {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.75); /* fondo oscuro semitransparente */
+  backdrop-filter: blur(5px); /* efecto glass suave */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* sombra sutil */
+  transition: all 0.3s ease-in-out; /* transición suave */
+}
